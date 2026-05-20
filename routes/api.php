@@ -1,0 +1,8 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TransaksiController;
+use App\Http\Controllers\MerchantController;
+
+Route::get('/transaksi', [TransaksiController::class, 'index']);
+Route::post('/transaksi', [TransaksiController::class, 'store']);
